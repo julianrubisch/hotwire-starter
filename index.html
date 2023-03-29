@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Hotwire Starter</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="styles.css" />
+
+    <!--
+    JSPM Generator Import Map
+    Edit URL: https://generator.jspm.io/#U2VhYGBiDs0rySzJSU1hcMjILynPLEpN0S8uycwtzSktdjDWM9IzRJIoKS1Kyncw1zPWMwAA7zjtuj0A
+  -->
+    <script type="importmap" data-turbo-track="reload">
+      {
+        "imports": {
+          "@hotwired/turbo": "https://ga.jspm.io/npm:@hotwired/turbo@7.3.0/dist/turbo.es2017-esm.js",
+          "@hotwired/stimulus": "https://ga.jspm.io/npm:@hotwired/stimulus@3.2.1/dist/stimulus.js",
+          "app": "/app.js",
+          "controllers": "/controllers/index.js",
+          "controllers/application": "/controllers/application.js",
+          "controllers/": "/controllers/"
+        }
+      }
+    </script>
+
+    <!-- ES Module Shims: Import maps polyfill for modules browsers without import maps support (Safari 16.3) -->
+    <script
+      async
+      src="https://ga.jspm.io/npm:es-module-shims@1.5.1/dist/es-module-shims.js"
+      crossorigin="anonymous"
+      data-turbo-track="reload"
+    ></script>
+
+    <script type="module">
+      import 'app';
+    </script>
+  </head>
+  <body>
+    <div data-controller="hello"></div>
+  </body>
+</html>
