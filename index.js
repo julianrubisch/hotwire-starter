@@ -14,6 +14,8 @@ http
         const content = fs.readFileSync(path.join(__dirname, req.url));
         if (req.url.endsWith('.js')) {
           res.setHeader('Content-Type', 'application/javascript');
+        } else if (req.url.endsWith('.html')) {
+          res.setHeader('Content-Type', 'text/html');
         } else {
           res.setHeader('Content-Type', 'text/css');
         }
